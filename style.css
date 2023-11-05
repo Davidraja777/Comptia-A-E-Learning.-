@@ -1,0 +1,142 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    background-color: #261B14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    position: relative;
+    border: 1px solid #FFFFFF;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #736C63;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    perspective: 1000px;
+    overflow: hidden;
+    height: auto; /* Change from a fixed height to auto */
+    min-height: 120px; /* Set a minimum height */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.card:hover {
+    background-color: #9E948A;
+    transform: translateY(-5px);
+}
+
+.card-front, .card-back {
+    backface-visibility: hidden;
+    height: 100%;
+    transition: transform 0.6s;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute; /* Change from absolute to relative */
+    width: 100%;
+    transform-style: preserve-3d; /* Preserve 3D to keep children in the same 3D space */
+}
+
+.card-front {
+    background-color: #736C63;
+    color: white;
+    z-index: 2; /* Ensure the front is above the back when not flipped */
+}
+
+.card-back {
+    background-color: #9E948A;
+    color: white;
+    transform: rotateY(180deg) translateZ(1px); /* Adjust for the thickness of the card */
+    z-index: 1; /* Ensure the back is below the front when not flipped */
+    display: none;
+}
+
+.card.flipped .card-front {
+    transform: rotateY(-180deg) translateZ(1px); /* Adjust for the thickness of the card */
+}
+
+.card.flipped .card-back {
+    transform: rotateY(0deg) translateZ(1px); /* Adjust for the thickness of the card */
+    z-index: 3; /* Bring the back above the front when flipped */
+    display: flex;
+}
+
+.image{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+}
+
+img{
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+h3 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+
+h2 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.image1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .image{
+      height: 82vh; /* Limit the height on small devices */
+      width: auto; /* Maintain aspect ratio */
+    }
+
+    .image1 img{
+        height: 100%; /* Limit the height on small devices */
+        width: 100%; /* Maintain aspect ratio */
+      }
+}
+
+p{
+    color: #FFFFFF;
+}
+
+ul{
+    color: #FFFFFF;
+}

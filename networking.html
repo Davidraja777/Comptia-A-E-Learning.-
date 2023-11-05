@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking - CompTIA A+ Study Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>2.1 Compare and contrast Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) ports, protocols, and their purposes.</h1>
+    <H2>Transmission Control Protocol (TCP)</H2>
+
+    <div class="image">
+        <img src="TCP.png" alt="">
+        <H3>Diagram 1. TCP Ports Explained</H3>
+    </div>
+
+    <div class="image">
+        <img src="TCP-USE CASES.PNG" alt="">
+        <H3>Diagram 2. TCP USE CASES</H3>
+    </div>
+
+    <div class="card-container">
+        
+        <!-- Flashcard 1 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>20/21 – File Transfer Protocol (FTP)</h3>
+            </div>
+            <div class="card-back">
+                <p>Used for transferring files between systems on a network.</p>
+            </div>
+        </div>
+        
+        <!-- Flashcard 2 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>22 – Secure Shell (SSH)</h3>
+            </div>
+            <div class="card-back">
+                <p>Provides a secure channel over an unsecured network in a client-server architecture.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 3 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>23 – Telnet</h3>
+            </div>
+            <div class="card-back">
+                <p>Allows users to communicate with a remote device or server.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 4 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>25 – Simple Mail Transfer Protocol (SMTP)</h3>
+            </div>
+            <div class="card-back">
+                <p>Used for sending emails.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 5 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>53 – Domain Name System (DNS)</h3>
+            </div>
+            <div class="card-back">
+                <p>Translates domain names to IP addresses.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 6 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>80 – Hypertext Transfer Protocol (HTTP)</h3>
+            </div>
+            <div class="card-back">
+                <p>Used for transmitting web pages.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 7 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>110 – Post Office Protocol 3 (POP3)</h3>
+            </div>
+            <div class="card-back">
+                <p>Used by local email clients to retrieve emails from a remote server.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 8 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>137/139 – NetBIOS/NetBT</h3>
+            </div>
+            <div class="card-back">
+                <p>Supports session layer services like file and printer sharing.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 9 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>143 – Internet Mail Access Protocol (IMAP)</h3>
+            </div>
+            <div class="card-back">
+                <p>Manages email messages on a server.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 10 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>161/162 – Simple Network Management Protocol (SNMP)</h3>
+            </div>
+            <div class="card-back">
+                <p>Used for network management.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 8 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>389 – Lightweight Directory Access Protocol (LDAP)</h3>
+            </div>
+            <div class="card-back">
+                <p>Provides directory services for finding network resources.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 8 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>443 – Hypertext Transfer Protocol Secure (HTTPS)</h3>
+            </div>
+            <div class="card-back">
+                <p>Secure version of HTTP.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 8 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>445 – Server Message Block (SMB)/CIFS</h3>
+            </div>
+            <div class="card-back">
+                <p>Used for file sharing, network browsing, and inter-process communication.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 8 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>3389 – Remote Desktop Protocol (RDP)</h3>
+            </div>
+            <div class="card-back">
+                <p>Allows a user to connect to another computer over a network connection.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>User Datagram Protocol (UDP) Ports and Protocols</h2>
+
+    <div class="image1">
+        <img src="UDP.PNG" alt="">
+        <h3>Diagram 1. UDP Ports Explained</h3>
+    </div>
+
+    <div class="image1">
+        <img src="UDP-USE CASES.PNG" alt="">
+        <H3>Diagram 2. UDP Use Cases</H3>
+    </div>
+
+    <div class="card-container">
+
+        <!-- Flashcard 8 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>67/68 – Dynamic Host Configuration Protocol (DHCP)</h3>
+            </div>
+            <div class="card-back">
+                <p>Used for network management protocol for automatically assigning IP addresses.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 8 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>53 – Domain Name System (DNS)</h3>
+            </div>
+            <div class="card-back">
+                <p>Can also use UDP for query requests.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 8 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>137/139 – NetBIOS/NetBT</h3>
+            </div>
+            <div class="card-back">
+                <p>Can also use UDP for name resolution.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 8 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>161/162 – Simple Network Management Protocol (SNMP)</h3>
+            </div>
+            <div class="card-back">
+                <p>Can also use UDP for sending simple messages between devices.</p>
+            </div>
+        </div>
+
+        <!-- Flashcard 8 -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">
+                <h3>Trivial File Transfer Protocol - TFTP (not listed with a port number, typically uses 69)</h3>
+            </div>
+            <div class="card-back">
+                <p>A simple file transfer protocol that uses UDP.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h2>TCP vs. UDP</h2>
+
+    <div class="image1">
+        <img src="TCPVSUDP.png" alt="">
+        <h3>Diagram 1. Differences between TCP and UDP</h3>
+    </div>
+
+    <div>
+        <p>TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of the core protocols of the Internet Protocol Suite, which define how data should be transmitted across the network. Here are the primary differences between them:</p>
+        <p>1. Connection Type:</p>
+        <ul>
+            <li>TCP is connection-oriented. This means that before any data can be transmitted, a reliable connection must be established and maintained between the sender and receiver. It's like making a phone call; you need to establish the connection before you can communicate.</li>
+            <li>UDP is connectionless. It sends messages, called datagrams, to the recipient without establishing a dedicated connection. This is similar to sending a letter; you send it out with the hope that it arrives at the correct destination.</li>
+        </ul>
+
+        <p>2. Reliability:</p>
+        <ul>
+            <li>TCP provides reliability. It ensures that the data sent by the sender arrives at the receiver without errors and in the same order in which it was sent. If any packets are lost, TCP will detect this and resend them.</li>
+            <li>UDP does not provide such reliability. There's no guarantee that the messages or packets sent would reach the receiver. If a packet is lost, UDP does not resend it.</li>
+        </ul>
+
+        <p>3. Ordering:</p>
+        <ul>
+            <li>TCP maintains ordering. It ensures that packets arrive in the exact sequence they were sent, which is crucial for many applications where data needs to be processed in a specific order.</li>
+            <li>UDP does not ensure that packets arrive in order. Packets may arrive out of sequence, and it's up to the application to handle these cases.</li>
+        </ul>
+
+        <p>4. Speed and Overhead:</p>
+        <ul>
+            <li>TCP is slower compared to UDP due to its mechanisms for establishing connections, error-checking, and ensuring packet order. This creates additional data overhead and latency.</li>
+            <li>UDP is faster because it has minimal protocol mechanisms. It does not establish a connection, and there is no error-checking or retransmission of lost packets, which reduces the amount of overhead and latency.</li>
+        </ul>
+
+        <p>5.Flow Control and Congestion Control:</p>
+        <ul>
+            <li>TCP has built-in flow control and congestion control. It adjusts the rate of data flow to match the receiver's ability to consume the data and to avoid overwhelming the network.</li>
+            <li>UDP lacks these features. It sends data at the rate determined by the application and does not adjust its pace based on network conditions or receiver capabilities.</li>
+        </ul>
+
+        <p>6. Use Cases:</p>
+        <ul>
+            <li>TCP is used for applications where reliability and order are critical, such as web browsing (HTTP/HTTPS), email (SMTP, POP3, IMAP), and file transfers (FTP).</li>
+            <li>UDP is used for applications where speed is more important than reliability, such as streaming video or audio, VoIP calls, or online gaming.</li>
+        </ul>
+
+        <p>In summary, TCP is like a reliable courier service that guarantees delivery and takes care of the order and integrity of the packages, while UDP is like a fast postal service that sends out your mail quickly but does not guarantee delivery or order.</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
